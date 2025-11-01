@@ -1,7 +1,8 @@
 package com.example.elasticapplication.controller;
 
 import com.example.elasticapplication.model.Produtos;
-import com.example.elasticapplication.repository.ProdutosRepository;
+// Importe o serviço
+import com.example.elasticapplication.service.ProdutoService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -14,32 +15,43 @@ import java.util.List;
 public class ProdutosController {
 
     @Autowired
-    private final ProdutosRepository produtosRepository;
+    // Altere do Repository para o Service
+    private final ProdutoService produtoService;
 
     @PostMapping
     public void addProduto(@RequestBody Produtos produto){
-        produtosRepository.save(produto);
+        produtoService.addProduto(produto); // use o serviço
     }
 
     @GetMapping("/{id}")
     public Produtos findById(@PathVariable String id){
-        return produtosRepository.findById(id).get();
+        return produtoService.findById(id); // use o serviço
     }
 
     @GetMapping
     public Iterable<Produtos> findAll(){
-        return produtosRepository.findAll();
+        return produtoService.findAll(); // use o serviço
     }
 
     @DeleteMapping("/{id}")
     public void delete(@PathVariable String id){
-        produtosRepository.deleteById(id);
+        produtoService.delete(id); // use o serviço
     }
 
     @PutMapping
     public void atualizarProduto(@RequestBody Produtos produto){
-        produtosRepository.save(produto);
+        produtoService.atualizarProduto(produto); // use o serviço
     }
 
+    // --- NOSSO NOVO ENDPOINT DE BUSCA AVANÇADA ---
 
+    @GetMapping("/search")
+    public List<Produtos> search(
+            @RequestParam(required = false) String nome,
+            @RequestParam(required = false) String marca,
+            @RequestParam(required = false) Integer precoMin,
+            @RequestParam(required = false) Integer precoMax
+    ) {
+        return produtoService.buscaAvancada(nome, marca, precoMin, precoMax);
+    }
 }

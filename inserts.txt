@@ -1,0 +1,118 @@
+{
+  "nome": "Notebook Gamer Dell G15",
+  "marca": "Dell",
+  "preco": 5500,
+  "distribuidores": [
+    { "nome": "Kabum", "ativo": true }, { "nome": "Dell", "ativo": true}, {"nome": "Pichau", "ativo": false}
+
+  ]
+}
+
+
+{
+  "nome": "Notebook Samsung Galaxy Book",
+  "marca": "Samsung",
+  "preco": 3200,
+  "distribuidores": [
+    { "nome": "Magazine Luiza", "ativo": true }, { "nome": "Samsung", "ativo": true}, {"nome": "Amazon", "ativo": true}
+
+  ]
+}
+
+{
+  "nome": "Mouse Gamer Logitech",
+  "marca": "Logitech",
+  "preco": 450,
+  "distribuidores": [
+    { "nome": "Pichau", "ativo": true }, { "nome": "Kabum", "ativo": true}, {"nome": "Logitech", "ativo": true}
+
+  ]
+}
+
+
+{
+  "nome": "MacBook Pro 14",
+  "marca": "Apple",
+  "preco": 12500,
+  "distribuidores": [
+    { "nome": "Loja Oficial Apple", "ativo": true }
+  ]
+}
+
+{
+  "nome": "iPhone 15 Pro",
+  "marca": "Apple",
+  "preco": 9800,
+  "distribuidores": [
+    { "nome": "Amazon", "ativo": true },
+    { "nome": "Kabum", "ativo": true }
+  ]
+}
+
+{
+  "nome": "AirPods Pro 2",
+  "marca": "Apple",
+  "preco": 1800,
+  "distribuidores": [
+    { "nome": "Kabum", "ativo": true }
+  ]
+}
+
+{
+  "nome": "Notebook Dell XPS 15",
+  "marca": "Dell",
+  "preco": 11000,
+  "distribuidores": [
+    { "nome": "Loja Oficial Dell", "ativo": true }
+  ]
+}
+{
+  "nome": "Monitor UltraSharp 27",
+  "marca": "Dell",
+  "preco": 2800,
+  "distribuidores": [
+    { "nome": "Amazon", "ativo": true },
+    { "nome": "Kabum", "ativo": false }
+  ]
+}
+{
+  "nome": "Galaxy S24 Ultra",
+  "marca": "Samsung",
+  "preco": 8500,
+  "distribuidores": [
+    { "nome": "Amazon", "ativo": true }
+  ]
+}
+{
+  "nome": "TV QLED 55",
+  "marca": "Samsung",
+  "preco": 4200,
+  "distribuidores": [
+    { "nome": "Magazine Luiza", "ativo": true }
+  ]
+}
+{
+  "nome": "Galaxy Watch 6",
+  "marca": "Samsung",
+  "preco": 2100,
+  "distribuidores": [
+    { "nome": "Kabum", "ativo": true }
+  ]
+}
+{
+  "nome": "Mouse MX Master 3S",
+  "marca": "Logitech",
+  "preco": 600,
+  "distribuidores": [
+    { "nome": "Amazon", "ativo": true },
+    { "nome": "Kabum", "ativo": true }
+  ]
+}
+{
+  "nome": "Teclado MX Keys S",
+  "marca": "Logitech",
+  "preco": 750,
+  "distribuidores": [
+    { "nome": "Amazon", "ativo": true }
+  ]
+}
